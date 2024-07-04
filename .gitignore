@@ -13,11 +13,94 @@
 
 # misc
 .DS_Store
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.old
+*.pid
+
+# React Native
+.expo/
+.expo-shared/
+
+# Parcel-bundler
+.cache/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.csproj.user
+
+# Visual Studio Code
+.vscode/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+
+# Eclipse
+.project
+.classpath
+.cproject
+.settings/
+.apt_generated/
+.factorypath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Other IDEs
+*.tmproj
