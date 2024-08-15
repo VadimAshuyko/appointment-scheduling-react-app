@@ -1,0 +1,151 @@
+.langSelectContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.langSelectBtn {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.langSelectDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    line-height: 2;
+}
+
+.dropdownDiv {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 52px;
+}
+
+.innerDropdownDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: var(--color-primary-bg);
+    border-radius: 14px;
+}
+
+.globeIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.arrowIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 480px) {
+    .langSelectContainer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .langSelectDiv {
+        gap: 4px;
+        line-height: 2;
+    }
+
+    .dropdownDiv {
+        margin-top: 57px;
+    }
+
+    .innerDropdownDiv {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 14px;
+    }
+
+    .globeIcon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .arrowIcon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .langSelectContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .langSelectDiv {
+        gap: 5px;
+        line-height: 2;
+    }
+
+    .dropdownDiv {
+        margin-top: 60px;
+    }
+
+    .innerDropdownDiv {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 16px;
+    }
+
+    .globeIcon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .arrowIcon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .langSelectContainer {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .langSelectDiv {
+        gap: 5px;
+        line-height: 2;
+    }
+
+    .dropdownDiv {
+        margin-top: 70px;
+    }
+
+    .innerDropdownDiv {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 16px;
+    }
+
+    .globeIcon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .arrowIcon {
+        width: 16px;
+        height: 16px;
+    }
+}

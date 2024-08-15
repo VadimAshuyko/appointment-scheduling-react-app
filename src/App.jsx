@@ -1,23 +1,25 @@
 import {Route, Routes} from 'react-router-dom';
-import LogInPage from './pages/auth/LogInPage/LogInPage';
-import SignUpPage from './pages/auth/SingUpPage/SignUpPage';
-import MailConfirmationPage from "./pages/auth/MailConfirmationPage/MailConfirmationPage";
-import PasswordResetPage from "./pages/auth/PasswordResetPage/PasswordResetPage";
-import * as PATHS from './routes/routes.js';
+import SignInPage from './pages/auth/SignInPage';
+import SignUpPage from './pages/auth/SignUpPage';
+import EmailVerificationPage from './pages/auth/EmailVerificationPage';
+import PasswordResetPage from './pages/auth/PasswordResetPage';
 import './App.css';
+import * as PATHS from './routes/routes.js';
 
-function App() {
-
+const App = () => {
   return (
     <>
       <Routes>
         <Route path={PATHS.SIGN_UP_PATH} element={<SignUpPage/>}/>
-        <Route path={PATHS.LOG_IN_PATH} element={<LogInPage/>}/>
-        <Route path={PATHS.MAIL_CONFIRMATION_PATH} element={<MailConfirmationPage/>}/>
+        <Route path={PATHS.SIGN_IN_PATH} element={<SignInPage/>}/>
+        <Route path={PATHS.EMAIL_VERIFICATION_PATH} element={<EmailVerificationPage/>}/>
         <Route path={PATHS.PASSWORD_RESET_PATH} element={<PasswordResetPage/>}/>
+        {/* TODO implement AppointmentTypes page */}
+        <Route path={PATHS.APPOINTMENT_TYPES_PATH} element={<SignUpPage/>}/>
+        {/* TODO implement 404 NotFound page */}
       </Routes>
     </>
   );
-}
+};
 
 export default App;

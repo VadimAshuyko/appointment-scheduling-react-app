@@ -1,10 +1,12 @@
 :root {
-    --main-font-color: #071840;
-    --header-text-color: #071840;
-    --main-blue-color: #37A9FD;
-    --error-color: #b63838;
-    --auth-header-color: #007EFB;
-    --lang-option-color: rgb(71, 103, 136);
+    --color-primary-font: #071840;
+    --color-main-blue: #37A9FD;
+    --color-auth-form-error: #b63838;
+    --color-lang-option: #476788;
+    --color-primary-bg: #f9f9f9;
+    --color-auth-form-border: #8393C3;
+    --color-auth-main-bg: #8089ff;
+    --color-focused-bg: #e7a449;
 }
 
 * {
@@ -17,17 +19,24 @@ html {
     font-size: 15px;
 }
 
-header {
-    font-size: 15px;
-}
-
 body {
+    background-color: var(--color-auth-main-bg);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Open Sans', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--main-font-color);
+    color: var(--color-primary-font);
+}
+
+#root {
+    height: 100%;
+    min-height: 100vh;
+}
+
+::selection {
+    color: white;
+    background: var(--color-lang-option);
 }
 
 button,
@@ -42,6 +51,10 @@ textarea {
 
 button {
     cursor: pointer;
+}
+
+button:disabled {
+    pointer-events: none;
 }
 
 button:focus,
@@ -64,40 +77,24 @@ table {
     border-spacing: 0;
 }
 
-header {
-    color: var(--auth-header-color);
-}
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 @media (min-width: 480px) {
     html {
-        font-size: 16px;
-    }
-
-    header {
         font-size: 15px;
     }
 }
 
 @media (min-width: 768px) {
     html {
-        font-size: 18px;
-    }
-
-    header {
         font-size: 16px;
     }
 }
 
 @media (min-width: 1280px) {
     html {
-        font-size: 20px;
-    }
-
-    header {
         font-size: 18px;
     }
 }

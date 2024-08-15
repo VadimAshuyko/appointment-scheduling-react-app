@@ -1,0 +1,49 @@
+.optionsDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.returnBackBtn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.815rem;
+    color: var(--color-primary-font);
+}
+
+.resendBtn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.815rem;
+    color: var(--color-main-blue);
+}
+
+.errorMessage {
+    color: var(--color-auth-form-error);
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.fieldsetDisabled {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    width: auto;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1280px) {
+}

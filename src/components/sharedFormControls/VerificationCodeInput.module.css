@@ -1,0 +1,55 @@
+.inputField {
+    width: 20px;
+    height: 30px;
+    border: 1px solid var(--color-auth-main-bg);
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.inputsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.inputField:focus {
+    outline: none;
+    border: 2px solid var(--color-focused-bg);
+}
+
+@media (min-width: 480px) {
+    .inputField {
+        width: 20px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .inputsContainer {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .inputField {
+        width: 25px;
+        height: 35px;
+        border-radius: 6px;
+    }
+
+    .inputsContainer {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .inputField {
+        width: 30px;
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    .inputsContainer {
+        gap: 18px;
+    }
+}

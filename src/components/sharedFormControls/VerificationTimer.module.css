@@ -1,0 +1,8 @@
+.timerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-auth-form-border);
+}
